@@ -12,6 +12,7 @@ import {
 } from 'reactstrap';
 import Tombol from './button/Greenoutlinebutton';
 import Dropdowntest from './navbar/Dropdownnavbar';
+import { Link } from 'react-router-dom';
 
 export default class Example extends React.Component {
   constructor(props) {
@@ -31,17 +32,20 @@ export default class Example extends React.Component {
     return (
       <div>
         <Navbar light expand="md" className="edit-nav">
-          <NavbarBrand href="/">
-            <img src={logo} alt="we are" className="logo-brand" />
+          <NavbarBrand>
+            <Link to="/">
+              <img src={logo} alt="we are" className="logo-brand" />
+              {/* <h3>Santren Koding</h3> */}
+            </Link>
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              <Dropdowntest kategori="HOME" />
               <Dropdowntest kategori="COURSES" />
               <Dropdowntest kategori="EVENTS" />
               <Dropdowntest kategori="PAGES" />
               <Dropdowntest kategori="BLOG" />
+              <Dropdowntest kategori="ABOUT" />
             </Nav>
             <Nav navbar>
               <NavItem className="registerlogin">

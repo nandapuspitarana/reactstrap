@@ -12,7 +12,7 @@ const Tombol = props => {
             outline
             key={key}
             color="secondary"
-            className="nav-button content-button">
+            className="nav-button content-category-button">
             {props.data[key]}
           </Button>
         );

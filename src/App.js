@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
 import './styles/App.css';
-import Navigasi from './components/navbar';
-import Mainhero from './components/jumbotron';
-import Feature from './components/Feature';
-import Content from './components/Content';
+import Homepage from './containers/Homepage';
+import Courses from './containers/Courses';
+import { Switch, Route } from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
       <div className="default">
-        <Navigasi />
-        <Mainhero />
-        <Feature />
-        <Content />
+        <Switch>
+          <Route exact={true} path="/" component={Homepage} />
+          <Route path="/courses" component={Courses} />
+        </Switch>
       </div>
     );
   }

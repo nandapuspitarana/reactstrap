@@ -5,12 +5,16 @@ import {
   DropdownMenu,
   DropdownItem
 } from 'reactstrap';
+import { Link } from 'react-router-dom';
+import '../../styles/Navbar.css';
 
 const Dropdownnavbar = props => {
   return (
     <UncontrolledDropdown nav inNavbar>
       <DropdownToggle nav caret>
-        {props.kategori}
+        <Link nameClass="nav-link" to={props.kategori}>
+          {props.kategori}
+        </Link>
       </DropdownToggle>
       <DropdownMenu right>
         <DropdownItem>Option 1</DropdownItem>

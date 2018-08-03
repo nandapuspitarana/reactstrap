@@ -14,7 +14,7 @@ export default class Content extends Component {
 
   componentDidMount = () => {
     axios
-      .get('https://abuadzhan.com/wp-json/wp/v2/posts/?per_page=3')
+      .get('https://abuadzhan.tk/wp-json/wp/v2/posts/?per_page=3')
       .then(response => {
         this.setState({ data: response.data, Loader: true });
       });
@@ -31,7 +31,7 @@ export default class Content extends Component {
             <Tombol data={this.state.kategori} />
           </Row>
           <Row>
-            <Container fluid className="container-margin" id="feature">
+            <Container fluid className="container-margin">
               <Row className="container-card justify-content-around">
                 {this.state.Loader ? (
                   <Cardkajian data={this.state.data} />

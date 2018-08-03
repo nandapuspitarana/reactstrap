@@ -9,6 +9,8 @@ import {
   Col
 } from 'reactstrap';
 import Aux from '../../hoc/Auxiliary';
+import { Route, Switch, Link } from 'react-router-dom';
+import Courses from '../../containers/Courses';
 
 const Cardkajian = props => {
   console.log(props);
@@ -22,7 +24,7 @@ const Cardkajian = props => {
                 className="card-list"
                 top
                 width="100%"
-                src=""
+                src={datum.fimg_url}
                 alt="Card image cap"
               />
               <CardBody>
@@ -32,7 +34,12 @@ const Cardkajian = props => {
                 <CardText
                   dangerouslySetInnerHTML={{ __html: datum.excerpt.rendered }}
                 />
-                <Button>Button</Button>
+                <Link to={`/${datum.slug}`}>
+                  <Button>Read more... </Button>
+                </Link>
+                <Switch>
+                  <Route path={`/${datum.slug}`} component={Courses} />
+                </Switch>
               </CardBody>
             </Card>
           </Col>
