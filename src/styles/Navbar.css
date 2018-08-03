@@ -1,0 +1,52 @@
+.edit-nav {
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  padding: 1.5rem 1rem !important;
+}
+
+.logo-brand {
+  height: auto;
+}
+
+.ml-auto.navbar-nav {
+  margin-right: 2.9rem;
+}
+
+.nav-item {
+  margin: 0.4rem 1rem 0 0;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.slashlogin {
+  margin-right: -0.5rem;
+}
+
+.registerlogin {
+  margin-right: -0.5rem;
+}
+
+.dropdown.nav-item {
+  margin: 0.4rem 2.8rem 0 0;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.dropdown-toggle::after {
+  margin-left: 0.45em;
+  vertical-align: 0;
+  border-top: 0.3em solid;
+  border-right: 0;
+  border-bottom: 0;
+  content: '\f107';
+  font-family: fontAwesome;
+  border-left: 0;
+}
+
+.nav-button {
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 8px 35px;
+  letter-spacing: 1px;
+}

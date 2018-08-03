@@ -1,0 +1,15 @@
+.title {
+  font-weight: 600;
+}
+
+.container-title {
+  width: 80%;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.title-line {
+  width: 60px;
+  border-top: 3px solid #1e7e34;
+  margin: 1.5em auto;
+}

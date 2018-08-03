@@ -1,0 +1,48 @@
+.jumbotron {
+  text-align: center;
+}
+
+.main-hero {
+  background-image: url('../Images/welcome-bg.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-jumbotron {
+  padding: 13rem 2rem !important;
+}
+
+.lead {
+  margin-top: 1rem;
+}
+
+.container-search-hero {
+  position: relative;
+  display: flex;
+  width: 550px;
+  height: 60px;
+  background-color: #fff;
+  margin: 2rem auto;
+  border-radius: 40px;
+  padding: 4px 5px;
+}
+
+.input-search-hero {
+  background-color: transparent;
+  border: none;
+  margin: auto;
+}
+
+.input-search-hero:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.hero-button {
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 15px 65px;
+  letter-spacing: 1px;
+}

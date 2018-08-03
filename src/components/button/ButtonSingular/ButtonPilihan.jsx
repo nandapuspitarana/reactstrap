@@ -1,0 +1,25 @@
+import React from 'react';
+import { Button } from 'reactstrap';
+import Aux from '../../../hoc/Auxiliary';
+import '../../../styles/Content.css';
+
+const Tombol = props => {
+  console.log(props);
+  return (
+    <Aux>
+      {props.data.map((datum, key) => {
+        return (
+          <Button
+            outline
+            key={key}
+            color="secondary"
+            className="nav-button content-button">
+            {props.data[key]}
+          </Button>
+        );
+      })}
+    </Aux>
+  );
+};
+
+export default Tombol;
