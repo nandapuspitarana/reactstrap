@@ -4,7 +4,6 @@ import Aux from '../../../hoc/Auxiliary';
 import '../../../styles/Content.css';
 
 const Tombol = props => {
-  console.log(props);
   return (
     <Aux>
       {props.data.map((datum, key) => {

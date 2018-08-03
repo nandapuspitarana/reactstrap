@@ -16,8 +16,8 @@ const Cardkajian = props => {
     <Aux>
       {props.data.map((datum, key) => {
         return (
-          <Col md={{ size: 4 }}>
-            <Card className="card" key={key}>
+          <Col md={{ size: 4 }} key={key}>
+            <Card className="card">
               <CardImg
                 className="card-list"
                 top
@@ -26,8 +26,12 @@ const Cardkajian = props => {
                 alt="Card image cap"
               />
               <CardBody>
-                <CardTitle>{datum.title.rendered}</CardTitle>
-                <CardText>{datum.excerpt.rendered}</CardText>
+                <CardTitle
+                  dangerouslySetInnerHTML={{ __html: datum.title.rendered }}
+                />
+                <CardText
+                  dangerouslySetInnerHTML={{ __html: datum.excerpt.rendered }}
+                />
                 <Button>Button</Button>
               </CardBody>
             </Card>
