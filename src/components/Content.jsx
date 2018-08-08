@@ -13,6 +13,7 @@ export default class Content extends Component {
   };
 
   componentDidMount = () => {
+    console.log(this.props.store);
     axios
       .get('https://abuadzhan.tk/wp-json/wp/v2/posts/?per_page=3')
       .then(response => {

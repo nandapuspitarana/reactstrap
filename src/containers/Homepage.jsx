@@ -4,6 +4,7 @@ import Mainhero from '../components/jumbotron';
 import Feature from '../components/Feature';
 import Content from '../components/Content';
 import OurPartner from '../components/Ourpartner';
+import Become from '../components/Become';
 
 class Homepage extends Component {
   render() {
@@ -14,6 +15,7 @@ class Homepage extends Component {
         <Feature />
         <Content />
         <OurPartner />
+        <Become />
       </div>
     );
   }

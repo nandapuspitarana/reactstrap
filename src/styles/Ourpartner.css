@@ -1,0 +1,23 @@
+#ourpartner {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+
+.image-ourpartner {
+  height: 120px;
+}
+
+.swiper-container-horizontal {
+  margin-top: 3rem;
+}
+
+.galleryedit {
+  max-width: 60%;
+  margin-top: 1rem;
+  margin-bottom: 30px;
+  opacity: 0.5;
+}
+
+.galleryedit:hover {
+  opacity: 1;
+}
