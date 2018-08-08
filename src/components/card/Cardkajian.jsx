@@ -34,11 +34,11 @@ const Cardkajian = props => {
                 <CardText
                   dangerouslySetInnerHTML={{ __html: datum.excerpt.rendered }}
                 />
-                <Link to={`/${datum.slug}`}>
+                <Link to={`/${datum.id}`}>
                   <Button>Read more... </Button>
                 </Link>
                 <Switch>
-                  <Route path={`/${datum.slug}`} component={Courses} />
+                  <Route path={`/${datum.id}`} component={Courses} />
                 </Switch>
               </CardBody>
             </Card>
